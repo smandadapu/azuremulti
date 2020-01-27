@@ -2,7 +2,7 @@ node any
   stages {
     stage('Example') {
       steps {
-        sh 'echo builing from ${BRANCH_NAME}'
+        bat 'echo  env.BRANCH_NAME'
       }
     }
   }
