@@ -1,5 +1,5 @@
-pipeline {
-  agent any
+
+  node any
   stages {
     stage('Example') {
       steps {
@@ -7,6 +7,8 @@ pipeline {
         bat 'echo building from env.${BRANCH_NAME}'
         bat 'echo build from env.BRANCH_NAME'
         bat 'echo build from BRANCH_NAME'
+        sh 'echo BRANCH_NAME'
+        sh 'echo env.BRANCH_NAME'
       }
     }
   }
