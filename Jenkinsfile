@@ -1,5 +1,4 @@
-
-  node any
+node any
   stages {
     stage('Example') {
       steps {
@@ -12,4 +11,4 @@
       }
     }
   }
-}
+
